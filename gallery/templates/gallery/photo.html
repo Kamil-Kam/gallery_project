@@ -1,0 +1,90 @@
+{% load static %}
+{% load custom_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{images.description}}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+
+    html * {
+        font-family: Times New Roman;
+    }
+
+    body {
+        background-color:#151515;
+        height: 100vh;
+    }
+
+    p.text-center {
+        font-size: 18px;
+        color:#FFFFFF
+    }
+
+    img  {
+        max-width: 100%;
+        max-height: 80vh;
+        display: block;
+        margin: auto;
+    }
+
+    a.center rounded {
+        margin: auto;
+    }
+
+    #carouselExample {
+        height: 80vh;
+    }
+
+    .carousel-inner {
+        height: 80vh;
+        width: 100vw;
+        vertical-align: middle;
+        display: table-cell;
+        text-align: center;
+    }
+
+    .carousel-item {
+        display: inline-block
+        margin: auto;
+        }
+
+    a.center rounded {
+        margin: auto;
+    }
+
+    </style>
+</head>
+<body>
+
+        <p class="text-center"><a href="{% url 'gallery' category %}" class="btn btn-dark my-3">Back to the gallery</a></p>
+
+        <div id="carouselExample" class="carousel slide" data-interval="false">
+
+            <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <a href="http://127.0.0.1:8000{{images.image.url}}"><img src="{{images.image.url}}" class="center rounded" alt="image not found"></a>
+                        <p class="text-center py-3">{{images.description}}</p>
+                    </div>
+
+                    {% display_carousel all_images images %}
+
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExample" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ category }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+
+    html * {
+        font-family: Times New Roman;
+        color: #FFFFFF;
+    }
+
+    h2 {
+        font-size: 45px;
+        font-family:"Playfair Display";
+        font-weight:500;
+        letter-spacing: 1px;
+    }
+
+    div.container {
+        background-color:#151515;
+    }
+
+    body {
+        background-color:#151515;
+    }
+
+    h2 > span{
+        position: relative;
+        display: inline-block;
+    }
+
+    h2 > span:before, h2 > span:after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        border-bottom: 2px solid;
+        width: 100px;
+        margin: 0 30px;
+    }
+
+    h2 > span:before{
+        right: 100%
+    }
+
+    h2 > span:after{
+        left: 100%;
+    }
+
+    a.btn btn-dark my-3 {
+        margin-left: ($spacer * .25);
+    }
+
+    img {
+    max-height: 30vh;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    }
+
+    #make-height {
+    min-height: 75vh;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center py-4"><span>{{category}}</span></h2>
+
+        <div id="make-height">
+        <div  class="row align-items-center">
+
+            {% for image in images %}
+            <div class="col-md-3 col-sm-12 mt-4">
+               <p><a href="{% url 'photo' category image.id %}"><img src="{{image.image.url}}" class="rounded" alt="image not found"></a></p>
+                <h6 class="text-center">{{image.description}}</h6>
+            </div>
+            {% endfor %}
+
+        </div>
+        </div>
+
+        <p class="text-center"><a href="{% url 'main' %}" class="btn btn-dark my-3">Back to the main page</a></p>
+    </div>
+
+</body>
+</html>
