@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <title>Add Photo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('#success-message, #danger-message').removeClass('d-none').delay(7000).fadeOut();
+    });
+    </script>
 
     <style>
 
@@ -18,6 +25,7 @@
 
     div.card {
         margin-top: 20vh;
+        background: rgba(255, 255, 255, .7)
     }
 
     .centered {
@@ -29,7 +37,6 @@
     }
 
     </style>
-
 
 </head>
 <body class="m-5">
@@ -46,7 +53,7 @@
 
                     <div class="form-group m-3">
                             <div><label>Upload photo</label></div>
-                            <input required name="image" type="file" multiple class="form-control-file">
+                            <input required name="image" type="file" multiple class="form-control-file" accept="image/jpeg, image/png">
                             <div><small class="form-text text-muted">Your photo will be automatically resized to max 1920 px size of it's bigger side.</small></div>
                     </div>
 
@@ -62,8 +69,23 @@
                 </form>
 
             </div>
+            {% if uploaded %}
+
+                {% if success %}
+                <div class="alert alert-success d-none text-center" id="success-message">
+                    {{ message }}
+                </div>
+
+                {% else %}
+                <div class="alert alert-danger d-none text-center" id="danger-message">
+                    {{ message }}
+                </div>
+                {% endif %}
+
+            {% endif %}
         </div>
     </div>
+
 
 </body>
 </html>
