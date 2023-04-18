@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037dd799-baaf-4209-991e-b8d481548589" name="Changes" comment="some improvements">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/templates/gallery/add_photo.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/gallery/add_photo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/templates/gallery/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/gallery/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/templates/gallery/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/gallery/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/views.py" afterDir="false" />
+    <list default="true" id="037dd799-baaf-4209-991e-b8d481548589" name="Changes" comment="main_page improvements">
       <change beforePath="$PROJECT_DIR$/gallery_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gallery_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/background2.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,12 +140,20 @@
       <option name="project" value="LOCAL" />
       <updated>1681338876780</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="main_page improvements">
+      <created>1681857112322</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681857112322</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="some improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="some improvements" />
+    <MESSAGE value="main_page improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="main_page improvements" />
   </component>
 </project>

@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Milky Way</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+
+    html * {
+        font-family: Times New Roman;
+    }
+
+    body {
+        background-color:#151515;
+        height: 100vh;
+    }
+
+    p.text-center {
+        font-size: 18px;
+        color:#FFFFFF;
+        margin-bottom: 0;
+    }
+
+    img  {
+        max-width: 100%;
+        max-height: 90vh;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute
+    }
+
+    a.center rounded {
+        margin: auto;
+    }
+
+    #carouselExample {
+        height: 80vh;
+    }
+
+    .carousel-inner {
+        height: 90vh;
+        width: 100vw;
+        vertical-align: middle;
+        display: table-cell;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+
+        <p class="text-center"><a href="{% url 'main' %}#milky_way" class="btn btn-dark my-3">Back to the main page</a></p>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
+
+          <ol class="carousel-indicators">
+            {% if active == '1' %}
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active" ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            {% elif active == '2' %}
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active" ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            {% else %}
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active" ></li>
+            {% endif %}
+          </ol>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img class="center rounded" src="{% static 'milky_way_'|add:active|add:'.png' %}"  alt="First slide">
+            </div>
+
+            <div class="carousel-item">
+              <img class="center rounded" src="{% static 'milky_way_'|add:next_photo|add:'.png' %}" alt="Second slide">
+            </div>
+
+            <div class="carousel-item">
+              <img class="center rounded" src="{% static 'milky_way_'|add:next_next_photo|add:'.png' %}" alt="Third slide">
+            </div>
+
+          </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+</body>
+</html>
