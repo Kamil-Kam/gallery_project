@@ -41,7 +41,7 @@
 </head>
 <body class="m-5">
 
-<img src="{% static 'background2.png' %}" class="centered">
+<img src="{% static 'background3.png' %}" class="centered">
 
     <div class="row justify-content-center">
         <div class="col-md-4">
@@ -54,7 +54,9 @@
                     <div class="form-group m-3">
                             <div><label>Upload photo</label></div>
                             <input required name="image" type="file" multiple class="form-control-file" accept="image/jpeg, image/png">
-                            <div><small class="form-text text-muted">Your photo will be automatically resized to max 1920 px size of it's bigger side.</small></div>
+                            <div><small class="form-text text-muted">
+                                Your photo will be allocated to the "Visitors photos" directory and automatically resized to max 1920 px size of it's bigger side.
+                            </small></div>
                     </div>
 
                     <div class="form-group m-3">

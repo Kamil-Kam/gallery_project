@@ -98,3 +98,21 @@ def main_website(request):
     return render(request, 'gallery/main.html', context)
 
 
+def milky_way_carousel(request, active, next_photo, next_next_photo):
+
+    context = {
+        'active': active,
+        'next_photo': next_photo,
+        'next_next_photo': next_next_photo,
+    }
+
+    return render(request, 'gallery/milky_way_carousel.html', context)
+
+
+def see_photo(request, the_photo):
+
+    context = {
+        'the_photo': the_photo,
+    }
+
+    return render(request, 'gallery/the_photo.html', context)

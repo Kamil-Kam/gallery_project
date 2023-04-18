@@ -29,11 +29,10 @@
         transform: translate(-50%, -50%);
         animation: fadeIn 2.5s linear forwards;
         width: 100%;
-
     }
 
     .title_1 {
-        font-size: 55px;
+        font-size: 60px;
         text-shadow: 3px 3px 1px black;
         text-transform:uppercase;
         font-family:"Playfair Display";
@@ -43,13 +42,21 @@
     }
 
     .title_2 {
-            text-transform:uppercase;
-        font-size: 70 px;
+        text-transform:uppercase;
+        font-size: 80 px;
         text-shadow: 3px 3px 1px black;
         font-family:"Playfair Display";
         font-weight:500;
         letter-spacing: 4px;
         color: rgba(255, 255, 255, 0.7);
+    }
+
+    .animation {
+        width: 100%;
+    }
+
+    .under {
+        width: 100%;
     }
 
     @keyframes fadeIn {
@@ -65,7 +72,7 @@
         width: 25%;
         height: 100%;
         display: inline;
-        margin-left: 0;
+        margin-left: 1%;
         margin-right: 1%;
         margin-top: 1%;
         margin-bottom: 1%;
@@ -79,6 +86,10 @@
         background-color: #eee;
     }
 
+    .row {
+        padding-bottom: 60px;
+    }
+
     .text_1{
         margin-top: 3%;
         margin-left: 3%;
@@ -88,38 +99,89 @@
     }
 
     .text_1 p {
-        text-indent: 50px;
         vertical-align: middle;
         text-align: justify;
-        text-indent: 70px;
-<!--        display: table-cell;-->
     }
 
-    .text_2{
-        margin-left: 3%;
-        margin-right: 4%;
+    p.intend {
+        text-indent: 50px;
+        }
+
+    .text_2 {
+        padding-left: 6%;
+        padding-right: 6%;
         text-align: justify;
-        text-indent: 70px;
-        padding: 3%
+    }
+
+    div.polaroid {
+        width: 80%;
+        background-color: white;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+        display: block;
+        margin: 0 auto;
+    }
+
+    div.panorama {
+        width: 90%;
+        background-color: white;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .text_3 {
+        text-align: justify;
+        padding-right: 6%;
+    }
+
+    .text_4 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .text_4 p {
+        text-align: justify;
+        text-indent: 30px;
     }
 
     .center {
         font-weight: bold;
-        position: relative;
         font-size: 120%;
-<!--        text-align: center;-->
+        text-align: center;
+    }
 
-
+    .center_2 {
+        text-align: center;
     }
 
     .container {
         background-color:#FFFFFF;
+        padding: 0;
+    }
+
+    #main_container {
+        padding-top: 40px;
     }
 
     body {
         background-color:#151515;
     }
 
+    img.body {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #151515
+    }
+
+    #aparat {
+        display: block;
+        margin: 0 auto;
+        max-width: 45%;
+        max-height: 45%;
+
+    }
 
     ul.animation {
         list-style: none;
@@ -165,7 +227,11 @@
       }
       95% {
         opacity:0;
-      }
+      }}
+
+    .ending {
+        width: 100%;
+    }
 
     </style>
 
@@ -173,45 +239,44 @@
 
 <body>
 
-<div class="heading">
+    <div class="heading">
 
-    <ul class="animation">
-        <li class="animation"><img src="{% static 'Bez nazwy-17.png' %}" alt="No image found" style="width: 100%;"></li>
-        <li class="animation"><img src="{% static 'Bez nazwy-1.png' %}" alt="No image found" style="width: 100%;"></li>
-        <li class="animation"><img src="{% static 'Bez nazwy-13.png' %}" alt="No image found" style="width: 100%;"></li>
-        <li class="animation"><img src="{% static 'Bez nazwy-15.png' %}" alt="No image found" style="width: 100%;"></li>
-        <li class="animation"><img src="{% static 'Bez nazwy-14.png' %}" alt="No image found" style="width: 100%;"></li>
-        <li class="animation"><img src="{% static 'Bez nazwy-16.png' %}" alt="No image found" style="width: 100%;"></li>
-    </ul>
-    <img src="{% static 'Bez nazwy-12.png' %}" class="under" alt="No image found" style="width: 100%;">
+        <ul class="animation">
+            <li class="animation"><img src="{% static 'Bez nazwy-17.png' %}" class="animation" alt="No image found"></li>
+            <li class="animation"><img src="{% static 'Bez nazwy-1.png' %}" class="animation" alt="No image found"></li>
+            <li class="animation"><img src="{% static 'Bez nazwy-13.png' %}" class="animation" alt="No image found"></li>
+            <li class="animation"><img src="{% static 'Bez nazwy-15.png' %}" class="animation" alt="No image found"></li>
+            <li class="animation"><img src="{% static 'Bez nazwy-14.png' %}" class="animation" alt="No image found"></li>
+            <li class="animation"><img src="{% static 'Bez nazwy-16.png' %}" class="animation" alt="No image found"></li>
+        </ul>
+        <img src="{% static 'Bez nazwy-12.png' %}" class="under" alt="No image found">
 
-    <div class="centered">
-        <h1 class="title_1">Travel Photography</h1>
-        <h2 class="title_2">Far & Wide</h2>
+        <div class="centered">
+            <h1 class="title_1">Travel Photography</h1>
+            <h2 class="title_2">Far & Wide</h2>
+        </div>
+
     </div>
-
-</div>
 
     <div class="container d-flex">
         <div class="card">
 
             <div class="card-header">
-            Galleries:
+                Galleries:
             </div>
 
             <ul class="list-group list-group-flush">
                 {% for category in  categories %}
-                 <a href="{% url 'gallery' category.category_name %}" ><li class="list-group-item">{{ category.category_name }}</li></a>
+                <a href="{% url 'gallery' category.category_name %}"><li class="list-group-item">{{ category.category_name }}</li></a>
                 {% endfor %}
-
                 <a href="{% url 'add_photo' %}" class="btn btn-dark btn-block btn-sm m-1">Add photo</a>
-             </ul>
+            </ul>
 
         </div>
 
         <div class="text_1" >
 
-            <p>
+            <p class="intend">
                 On this webpage, I am showcasing my photographic repertoire, captured during my travels. Predominantly, these are picturesque landscapes, panoramas,
                 and wildlife shots. Many of them feature colorful sunsets and sunrises, which render the most stunning visual delights for photography
                 enthusiasts.
@@ -221,73 +286,198 @@
                 will be allocated to the "Visitors photos" directory and automatically resized to a maximum dimension of 1920px on the larger side.
             </p>
             <p>
-                All the photographs have been taken using the Nikon D3300 camera, paired with the Nikon Nikkor AF-S DX 18-140 mm f/3.5-5.6G ED VR lens. Below, you
-                can find a concise description and a photograph of the equipment.
+                All the photographs have been captured using the Nikon D3300 camera, paired with the versatile Nikon Nikkor 18-140mm lens.
+                Below, you will find a concise description and a photograph of the equipment. Furthermore, you will also find
+                a selection of photos, each accompanied by a short description and a story of its creation.
             </p>
 
         </div>
 
     </div>
 
-    <div class="container">
+    <div class="container" id="main_container">
 
-        <div class="text_2">
+        <div>
+            <div class="row align-items-center">
 
-            <p class="center">Nikon D3300</p>
-            <p>
-                The black Nikon D3300 DSLR camera is lightweight and adaptable, with a 24.2 megapixel CMOS sensor in DX format and an EXPEED 4 image engine.
-                High-resolution imagery, notable low-light sensitivity to an expanded ISO 25600, continuous shooting at 5 frames per second, and Full HD 1080p video recording
-                capabilities are all made possible by the sensor and CPU working together.
-            </p>
+                <div class="col-6 text_2 d-flex align-items-center">
+                    <span>
+                        <p class="intend">
+                            The Nikon D3300 DSLR camera paired with the versatile Nikkor 18-140mm lens offers a good combination of features for
+                            photography enthusiasts. The camera boasts a 24.2 megapixel CMOS sensor in DX format and an EXPEED 4 image processor,
+                            enabling high-resolution imagery, low-light sensitivity up to ISO 25600, and continuous shooting at 5 frames per second.
+                        </p>
 
-            <p>
-                The sensor design also does not include the conventional optical low-pass filter to achieve the highest level of sharpness and resolution
-                in photographs and videos.
-                An 11-point autofocus system that offers rapid and precise focusing capabilities to suit working with various subject types in almost any lighting situation supports
-                these image assets. Additionally, various shooting options are available to aid in artistically enhancing your photography.
-                A big 3.0″ (921k-dot) LCD monitor is offered for live view monitoring, image playback, and menu navigation.
-                It has a broad 160° viewing angle to accommodate better working from high and low angles.
-                The optional WU-1a Wireless Mobile Adapter can enable Wi-Fi access for wirelessly transmitting imagery and remotely managing the camera from a connected Android or
-                iOS mobile device, further expanding the viewing and shooting capabilities of the D3300.
-            </p>
+                        <p>
+                            Additionally, the camera can record Full HD 1080p videos. The lens offers a 7.8x zoom ratio and a versatile focal length range,
+                            making it suitable for a wide range of photography genres. Together, the Nikon D3300 and Nikkor 18-140mm lens provide an excellent
+                            platform for capturing stunning photos and videos.
+                        </p>
+                    </span>
+                </div>
 
-            <p>
-                The AF-S DX NIKKOR 18-55mm f/3.5-5.6G VR II lens, a standard zoom offering a 35mm-equivalent focal length range of 27-82.5mm, is included with
-                the D3300 camera body.
-                A powerful VR image stabilization feature built into this lens helps to reduce camera shake by up to four shutter speed steps, which is beneficial when shooting
-                in low light. A rounded seven-blade diaphragm helps to produce an appealing out-of-focus look in photos with a shallow depth of field.
-                At the same time, Super Integrated Coating lowers flare and ghosting to maximize image clarity, contrast, and color neutrality.
-            </p>
+                <div class="col-6" id="lake_sun_flower.JPG">
+                    <div class="center_2">
+                        <img src="{% static 'nikon.png' %}" class="rounded" alt="No image found" id="aparat">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row align-items-center">
+
+                <div class="col-6">
+                    <a href="{% url 'see_photo' 'lake_sun_flower.JPG' %}">
+                        <div class="polaroid rounded center_2">
+                            <img src="{% static 'lake_sun_flower.JPG' %}" class="body rounded" alt="image not found">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 d-flex align-items-center text_2" id="mountain_sunset.JPG">
+                    <span>
+                    <p class="intend">
+                        Framing is a crucial element in photography as it highlights the subject, brings out its details, and creates depth in the image.
+                        Take, for example, the photo on your left. This photo has an interesting composition with the sun on one side, serving as
+                        the giver of light. and the flower on the other side, serving as the receiver of that light.
+                    </p>
+                    <p>
+                        To make the flower the main subject, it was placed off-center using the rule of thirds, and experiment with angles and perspective.
+                        Shooting from a low angle makes the flower look grand. Using a shallow depth of field blurs the
+                        background and accentuates the flower's intricate details.
+                    </p>
+                    <p>
+                        Good framing can create a visually stunning photo that evokes emotions and captures the essence of the moment.
+                    </p>
+                    </span>
+                </div>
+
+            </div>
+            <div class="row align-items-center">
+                <div class="col-6 d-flex align-items-center text_2" id="panorama_photo.JPG">
+                    <span>
+
+                    <p class="intend">
+                        Photos captured from the mountains during winter sunsets can be absolutely breathtaking. The snow-capped peaks bathed
+                        in warm light, crisp air, clouds at your feet, and tranquil surroundings create a mesmerizing scenery.
+                    </p>
+                    <p>
+                        However, it is crucial to remember that hiking down the mountain after sunset can be dangerous, especially in
+                        winter conditions. The terrain may be icy and treacherous, and darkness can make navigation difficult. Despite
+                        these risks, many amateur photographers are drawn to capture the beauty of mountain sunsets.
+                    </p>
+                    <p>
+                        While it's important to admire the scenery, safety should never be overlooked!
+                    </p>
+
+                    </span>
+                </div>
+
+                <div class="col-6">
+                    <a href="{% url 'see_photo' 'mountain_sunset.JPG' %}">
+                    <div class="polaroid rounded center_2">
+                        <img src="{% static 'mountain_sunset.JPG' %}" class="body rounded" alt="No image found">
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8 text-center">
+                    <a href="{% url 'see_photo' 'panorama_photo.JPG' %}">
+                        <div class="panorama polaroid rounded" id="panorama">
+                            <img src="{% static 'panorama_photo.JPG' %}" class="img-responsive center-block d-block mx-auto body rounded" alt="No image found">
+                        </div>
+                    </a>
+                </div>
+                <div class="text_3 col-12 col-md-4">
+                    <span>
+                    <p class="intend">
+                        A landscape panorama is an image created by merging several photos into one. This technique captures a wider
+                        angle and adds depth and dimension to the photo.
+                    </p>
+                    <p>
+                        The photo on left was creating by merging over a dozen of photos. Aligning the images provided a seamless,
+                        high-resolution panoramic image. A landscape panorama is an excellent way to capture the beauty of a scene and
+                        immerse the viewer in the environment.
+                    </p>
+                    <p>
+                        The original photo was over 30,000 pixels wide, but it was resized to 3840 pixels to ensure faster loading on this site.
+                        As a result, a lot of details have been lost in the process.
+                    </p>
+                    </span>
+                </div>
+            </div>
+            <div class="row align-items-center" id="milky_way">
+
+                <div class="text_2 col-12 col-md-12">
+                    <p class="intend">
+                        Photos of the Milky Way require specific techniques to capture. To create an image of the Milky Way, a
+                        camera with a high ISO and wide aperture is necessary. It's also essential to use a tripod to avoid camera shake
+                        and set a long exposure time to capture the details of the Milky Way. By merging several photos with a long open
+                        aperture, the photographer can create a high-resolution image with stunning detail and depth. The result is a breathtaking
+                        image of the Milky Way that highlights the beauty of our universe and inspires deep reflection.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row align-items-center">
+
+                <div class="col-12 col-md-4 text-center">
+                    <a href="{% url 'milky_way_carousel' 1 2 3 %}">
+                        <div class="polaroid rounded">
+                            <img src="{% static 'milky_way_1.png' %}" class="img-responsive center-block d-block mx-auto body rounded" alt="No image found">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <a href="{% url 'milky_way_carousel' 2 3 1 %}">
+                        <div class="polaroid rounded">
+                            <img src="{% static 'milky_way_2.png' %}" class="img-responsive center-block d-block mx-auto body rounded" alt="No image found">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <a href="{% url 'milky_way_carousel' 3 2 1%}">
+                        <div class="polaroid rounded">
+                            <img src="{% static 'milky_way_3.png' %}" class="img-responsive center-block d-block mx-auto body rounded" alt="No image found">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="text_4 col-12 col-md-4 text-center">
+                    <p>
+                        The first photo was created by merging eight separate images, each with an exposure time of 25 seconds.
+                        This technique reduces noise and enhances the visibility of light points such as stars and
+                        the Milky Way. The ground isn't merged, it's selected from one of those 8 pictures.
+                    </p>
+                </div>
+
+                <div class="text_4 col-12 col-md-4 text-center">
+                    <p>
+                        The second image is a processed version of the first one, with the stars removed, leaving only the Milky Way.
+                        This technique is useful for the next steps of processing, where I work on two layers. The first layer is this
+                        photo, while the second layer is the previous photo set in a special mode that allows me to work only on the brightest points.
+                    </p>
+                </div>
+
+                <div class="text_4 col-12 col-md-4 text-center">
+                    <p>
+                        The final image is the result of modifying the curves, white balance, and luminosity of both previous
+                        images in specific areas, enhancing the details of the Milky Way. Advanced techniques such as stacking and masking were
+                        used to create a seamless image with accurate color representation and a high level of detail. In my opinion, the resulting
+                        image is a quite nice image that captures the beauty of the Milky Way galaxy.
+                    </p>
+                </div>
+
+            </div>
 
         </div>
-
-        <div style="text-align: center"><img src="{% static 'nikon.png' %}" class="center" alt="Snow"></div>
-
-        <div class="text_2">
-
-            <p class="center">Nikkor 18-140mm</p>
-                <p>
-                    The Nikon 18-140mm ƒ/3.5-5.6 is Nikon's latest ''kit'' lens, sold optionally with the D5XXX and D7XXX series of digital SLR camera. The lens is designed to
-                    fit a camera with an APS-C (''subframe'') sensor, so while it will mount on Nikon film or FX digital bodies, it will show obvious vignetting when
-                    set to any focal length. The lens appears to replace the older 18-135mm lens, which did not come equipped with VR image stabilization.
-
-                </p>
-
-                <p>
-                    Small and light, the 18-140mm represents a field of view of approximately 27-210mm in 35mm terms. To economize and create a more efficient design, the
-                    lens is equipped with a variable aperture; as the zoom extends the focal length, both the largest and smallest apertures change. The following
-                    chart represents the largest and smallest apertures you can expect at a given focal length:
-                    The 18-140mm ƒ/3.5-5.6 provides very sharp results, at least as good as its recent contemporaries and better than previous designs in the same focal
-                    length range.
-                </p>
-
-                <p>
-                    Perhaps the best word to describe the sharpness profile of the 18-140mm is 'consistent'. With most zoom lenses, especially in the ''kit'' category, the designer
-                    must juggle a variety of factors, not the least of which is the cost of the design. Frequently a lens will be a good wide-angle performer, only to
-                    suffer when used at full telephoto; or, vice versa. This is not the case with the 18-140mm, which shows excellent performance at all focal lengths.
-                </p>
-
-        </div>
+        <img src="{% static 'filmstripphotos.png' %}" class="ending rounded" alt="No image found">
 
     </div>
 </body>
