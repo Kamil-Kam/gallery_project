@@ -34,7 +34,7 @@ def photo(request, category, pk):
 uploaded_ip_list = []
 
 
-def manage_uploaded_ip(address_ip: str, uploaded_time: float) -> bool:
+def manage_uploaded_ip(address_ip: str, uploaded_time: float) -> bool:  # function used by add_photo
     ip_count = 0
 
     for uploaded_ip in uploaded_ip_list:

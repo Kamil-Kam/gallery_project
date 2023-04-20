@@ -4,10 +4,69 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037dd799-baaf-4209-991e-b8d481548589" name="Changes" comment="main_page improvements">
+    <list default="true" id="037dd799-baaf-4209-991e-b8d481548589" name="Changes" comment="adding tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/templates/gallery/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/gallery/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gallery_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0003-Pano.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0003-Pano_6fTJeOt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0003-Pano_cYFUdHM.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0003-Pano_e9q2tvJ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0003-Pano_p85y6s0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0004_XRWhCGf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_00082.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_00082_CwOgRVD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_00082_g0OSlfy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_00082_r9ShBTt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_00082_sI1Mmwx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0008_IIvV264.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0008_QFbPWuT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0008_aX0Bj7Z.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_0slqA1f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_4GiUPoZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_AkhzuSZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_BRhU55d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_HvpIAPg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_LxOCygu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_iqig0NH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_jjEKX0s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_2FGrjg9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_4r6Yk9k.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_KTvXo8P.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_Kt6pIz5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_ZfW13Sv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_gtwUtWQ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_jw1FnIe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0031_c3foXfJ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_3jyDdKV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_9r389jW.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_LV8nXrY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_MQhXdd0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_MamQ7cN.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_PDVDxMU.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_o5rzG3M.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_oALWlkY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_yF872iw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0049_2_v69cLU5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0056_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0345.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0345_a6lbRNh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/multicolored-water-drop-wallpaper-828x1792_218.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/zachod_mazury.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/zachod_mazury_bZhumid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Visitors photos/zachod_mazury_pxyCzmz.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +76,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -156,13 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681857381670</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding tests">
+      <created>1681944523549</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681944523549</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="some improvements" />
     <MESSAGE value="main_page improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="main_page improvements" />
+    <MESSAGE value="adding tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding tests" />
   </component>
 </project>

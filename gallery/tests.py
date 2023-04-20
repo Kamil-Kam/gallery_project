@@ -1,6 +1,10 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from . models import Category, Gallery
+from django.core.files.uploadedfile import SimpleUploadedFile
+from io import BytesIO
+from PIL import Image
+import os
 
 # Create your tests here.
 
@@ -27,13 +31,6 @@ class TestGalleryViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'gallery/photo.html')
         self.assertContains(response, 'Test Gallery')
-
-    def test_add_photo(self):
-        with open('test.jpg', 'rb') as img:
-            response = self.client.post(reverse('add_photo'), {'description': 'Test Description', 'image': img})
-            self.assertEqual(response.status_code, 200)
-            self.assertTemplateUsed(response, 'gallery/add_photo.html')
-            self.assertContains(response, 'Photo uploaded successfully!')
 
     def test_main_website(self):
         response = self.client.get(reverse('main'))
@@ -69,4 +66,39 @@ class TestGalleryModels(TestCase):
             description='Test Gallery',
             image='test.jpg'
         )
-        self.assertEqual(str(gallery), 'Test Category /static/Test Category/test.jpg Test Gallery')
+        self.assertEqual(str(gallery), 'Test Category /media/test.jpg Test Gallery')
+
+
+class TestGalleryViewsAddPhoto(TestCase):
+
+    def setUp(self):
+        self.client = Client()
+        self.category = Category.objects.create(category_name='Visitors photos')
+        self.gallery = Gallery.objects.create(
+            category=self.category,
+            description='Test Gallery',
+            image='test.jpg'
+        )
+
+    def test_add_photo_view(self):
+        image_data = BytesIO()
+        image = Image.new('RGB', (100, 100), color='red')
+        image.save(image_data, format='JPEG')
+        image_data.seek(0)
+
+        uploaded_file = SimpleUploadedFile('image.jpg', content=image_data.read(), content_type='image/jpeg')
+
+        response = self.client.post(reverse('add_photo'), {
+            'description': 'Test photo',
+            'image': uploaded_file,
+        })
+
+        self.assertEqual(response.status_code, 200)
+
+        gallery = Gallery.objects.last()
+        self.assertEqual(gallery.description, 'Test photo')
+        self.assertEqual(gallery.category.category_name, 'Visitors photos')
+        self.assertEqual(gallery.image.url.split('/')[-1], 'image.jpg')
+
+        os.remove(gallery.image.path)
+
