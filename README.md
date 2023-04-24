@@ -2,6 +2,8 @@ The working website can be seen here:
 https://kamilkam.pythonanywhere.com/
 <br>
 <br>
+<br>The website is loading slowly due to the free hosting that I am using.
+<br>
 <br>
 This is my first web project created using the Django and Bootstrap frameworks. It's a photo gallery featuring my travel photos with short descriptions. The photos are organized into appropriate folders, and users can also upload their own photos to the Visitors Photos folder.
 <br>
