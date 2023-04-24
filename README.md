@@ -1,7 +1,6 @@
 The working website can be seen here:
 https://kamilkam.pythonanywhere.com/
 <br>
-<br>
 The website is loading slowly due to the free hosting that I am using.
 <br>
 <br>
