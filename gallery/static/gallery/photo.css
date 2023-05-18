@@ -1,0 +1,39 @@
+
+html * {
+    font-family: Times New Roman;
+}
+
+body {
+    background-color:#151515;
+    height: 100vh;
+}
+
+p.text-center {
+    font-size: 18px;
+    color:#FFFFFF
+}
+
+img  {
+    max-width: 100%;
+    max-height: 80vh;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute
+}
+
+a.center rounded {
+    margin: auto;
+}
+
+#carouselExample {
+    height: 80vh;
+}
+
+.carousel-inner {
+    height: 80vh;
+    width: 100vw;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}

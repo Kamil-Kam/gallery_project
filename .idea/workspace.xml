@@ -4,69 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037dd799-baaf-4209-991e-b8d481548589" name="Changes" comment="adding tests">
+    <list default="true" id="037dd799-baaf-4209-991e-b8d481548589" name="Changes" comment="improving tests">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_04_2023_22_57_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_04_2023_22_57__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/templates/gallery/add_photo.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/gallery/add_photo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/templates/gallery/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/gallery/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery/templates/gallery/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/gallery/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/templates/gallery/milky_way_carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/gallery/milky_way_carousel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/templates/gallery/photo.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/gallery/photo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/templates/gallery/the_photo.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/gallery/the_photo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gallery_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0003-Pano.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0003-Pano_6fTJeOt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0003-Pano_cYFUdHM.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0003-Pano_e9q2tvJ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0003-Pano_p85y6s0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0004_XRWhCGf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_00082.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_00082_CwOgRVD.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_00082_g0OSlfy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_00082_r9ShBTt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_00082_sI1Mmwx.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0008_IIvV264.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0008_QFbPWuT.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0008_aX0Bj7Z.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_0slqA1f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_4GiUPoZ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_AkhzuSZ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_BRhU55d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_HvpIAPg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_LxOCygu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_iqig0NH.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0014_jjEKX0s.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0020.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_2FGrjg9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_4r6Yk9k.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_KTvXo8P.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_Kt6pIz5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_ZfW13Sv.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_gtwUtWQ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0024_jw1FnIe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0031_c3foXfJ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_3jyDdKV.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_9r389jW.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_LV8nXrY.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_MQhXdd0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_MamQ7cN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_PDVDxMU.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_o5rzG3M.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_oALWlkY.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0034-Pano_yF872iw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0049_2_v69cLU5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0052.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0056_01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0345.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/DSC_0345_a6lbRNh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/multicolored-water-drop-wallpaper-828x1792_218.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/zachod_mazury.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/zachod_mazury_bZhumid.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Visitors photos/zachod_mazury_pxyCzmz.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,22 +53,25 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NXrC2yDMaXiUPkbGmkVoM2fZHs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Dom/Desktop/gallery_project",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dom/PycharmProjects/gallery_project&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dom\PycharmProjects\gallery_project\gallery\static\gallery" />
       <recent name="C:\Users\Dom\Desktop\gallery_project\gallery\templatetags" />
     </key>
   </component>
@@ -222,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681944523549</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="improving tests">
+      <created>1682027037176</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682027037176</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -230,6 +191,7 @@
     <MESSAGE value="some improvements" />
     <MESSAGE value="main_page improvements" />
     <MESSAGE value="adding tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding tests" />
+    <MESSAGE value="improving tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="improving tests" />
   </component>
 </project>
